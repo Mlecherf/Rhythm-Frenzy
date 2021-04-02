@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#game{
+    width: 200px;
+    height: 500px;
+    position: absolute;
+    top: 100px;
+    left: 860px;
+}
+#finish{
+    width:  50px;
+    height: 50px;
+    background-color: rgb(0, 199, 27);
+    position: absolute;
+    top: 450px;
+    left:0px;
+    
+}
+
+#score{
+    color:white
+}
+#lose{
+    color:white
+}
+#finish1{
+    width:  50px;
+    height: 50px;
+    background-color: rgb(209, 9, 9);
+    position: absolute;
+    top: 450px;
+    left:50px;
+    
+}
+
+#finish2{
+    width:  50px;
+    height: 50px;
+    background-color: rgb(252, 216, 11);
+    position: absolute;
+    top: 450px;
+    left:100px;
+    
+}
+
+#finish3{
+    width:  50px;
+    height: 50px;
+    background-color: #0004ff;
+    position: absolute;
+    top: 450px;
+    left: 150px;
+    
+}
+
+#touche{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(0, 199, 27);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    
+}
+
+#touche1{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(209, 9, 9);
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    
+}
+
+#touche2{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(252, 216, 11);
+    position: absolute;
+    top: 0px;
+    left: 100px;
+    
+}
+
+#touche3{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(0, 4, 255);
+    position: absolute;
+    top: 0px;
+    left: 150px;
+    
+}
+
+#PELOUF{
+    width: 50px;
+    height: 50px;
+    
+    position: absolute;
+    top: 450px;
+    left: 0px;
+    display: none;
+    
+    background-image: url(https://media.discordapp.net/attachments/753347321479037029/827121083802583051/Sans_titre_1.gif);
+    
+}
+
+#PELOUF1{
+    width: 50px;
+    height: 50px;
+    
+    position: absolute;
+    top: 450px;
+    left: 50px;
+    display: none;
+    
+    background-image: url(https://media.discordapp.net/attachments/753347321479037029/827121083802583051/Sans_titre_1.gif);
+    
+}
+
+#PELOUF2{
+    width: 50px;
+    height: 50px;
+    
+    position: absolute;
+    top: 450px;
+    left: 100px;
+    display: none;
+    
+    background-image: url(https://media.discordapp.net/attachments/753347321479037029/827121083802583051/Sans_titre_1.gif);
+    
+}
+
+#PELOUF3{
+    width: 50px;
+    height: 50px;
+    
+    position: absolute;
+    top: 450px;
+    left: 150px;
+    display: none;
+    
+    background-image: url(https://media.discordapp.net/attachments/753347321479037029/827121083802583051/Sans_titre_1.gif);
+    
+}
+.GameAnimation{
+   animation: block 1.5s infinite linear;
+}
+.GameAnimation1{
+    animation: block1 1.5s infinite linear;
+ }
+
+@keyframes block{
+    0%{top: -80px;}
+    100%{top: 500px;}
+
+}
+
+@keyframes block1{
+    0%{top: -80px;}
+    100%{top: 500px;}
+
+}
+
