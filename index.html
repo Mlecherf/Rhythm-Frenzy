@@ -8,22 +8,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body background="https://i.pinimg.com/originals/1c/38/7d/1c387daad556401b51637bbfdfc38e60.gif">
-       
+    
+<audio id="music" src="son/nya!.mp3" controller="false" autoplay="true" autostart="True" type="audio/mp3" height="0" width="0"></audio>
+
+
+
+    <li><input id="volumebar" type="range"></input></li>
+    <div class="popup" id="popup-1">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="close-btn" onclick="togglepopup()">&times;</div>
+        <h1>Commande de jeu</h1>
+        <h3><br>Ce jeu utilise les touches :<br><br> "A","Z","E" et "R" </h3>
+            <div class="touchecolor"></div>
+        </div>
+    </div>
+    <button class="button-toggle" onclick="togglepopup()">?</button>
     <div id="game">
-        <div id="finish"></div>
         <div id="finish1"></div>
         <div id="finish2"></div>
         <div id="finish3"></div>
-        <div id="touche" class="GameAnimation"></div>
-        <div id="touche1" class="GameAnimation" ></div>
-        <div id="touche2" class="GameAnimation"></div>
-        <div id="touche3" class="GameAnimation"></div>
-        <div id="PELOUF" class="PELOUUUUUUUUUF"></div>
-        <div id="PELOUF1" class="PELOUUUUUUUUUF"></div>
-        <div id="PELOUF2" class="PELOUUUUUUUUUF"></div>
-        <div id="PELOUF3" class="PELOUUUUUUUUUF"></div>
+        <div id="finish4"></div>
+        <div id="valide1" ></div>
+        <div id="valide2" ></div>
+        <div id="valide3" ></div>
+        <div id="valide4" ></div>
     </div>
     <div >
+        <h2 id="timer">00:00:00</h2>
         <h2 id="score">0</h2>
         <h1 id="lose"></h1>
     </div>
