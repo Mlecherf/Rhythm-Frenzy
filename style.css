@@ -2,22 +2,87 @@
     padding: 0;
     margin: 0;
 }
+.button-toggle{
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    font-size: 40px;
+    border: lightslategray solid 4px;
+    background: none;
+    color: #FFF;
+}
+
+.popup .overlay{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0, 0, 0.7);
+    z-index: 1;
+    display: none;
+}
+
+.popup .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    background: #FFF;
+    width: 450px;
+    height: 220px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.popup .close-btn{
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    color: #FFF;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.popup.active .overlay{
+    display: block;
+}
+
+.popup.active .content{
+    transition: all 300ms ease-in-out;
+    transform:translate(-50%,-50%) scale(1);
+}
+.touchecolor{
+    width:  50px;
+    height: 50px;
+    background-color: rgb(209, 9, 9);
+    position: absolute;
+    top: 80%;
+    left: 38%;
+    transform: translate(-80%,-38%);
+    border-radius: 20px;
+}
 #game{
-    width: 200px;
-    height: 500px;
+    width: 400px;
+    height: 800px;
     position: absolute;
     top: 100px;
     left: 860px;
 }
-#finish{
-    width:  50px;
-    height: 50px;
-    background-color: rgb(0, 199, 27);
-    position: absolute;
-    top: 450px;
-    left:0px;
-    
-}
+
 
 #score{
     color:white
@@ -25,82 +90,93 @@
 #lose{
     color:white
 }
+#timer{
+    color:white
+}
 #finish1{
-    width:  50px;
-    height: 50px;
+    width:  100px;
+    height: 100px;
     background-color: rgb(209, 9, 9);
     position: absolute;
-    top: 450px;
-    left:50px;
-    
+    top: 700px;
+    left:0px;
+    border-radius: 40px;
 }
 
 #finish2{
-    width:  50px;
-    height: 50px;
-    background-color: rgb(252, 216, 11);
+    width:  100px;
+    height: 100px;
+    background-color:rgb(252, 216, 11);
     position: absolute;
-    top: 450px;
+    top: 700px;
     left:100px;
-    
+    border-radius: 40px;
 }
 
 #finish3{
-    width:  50px;
-    height: 50px;
-    background-color: #0004ff;
+    width:  100px;
+    height: 100px;
+    background-color: #0004ff ;
     position: absolute;
-    top: 450px;
-    left: 150px;
-    
+    top: 700px;
+    left: 200px;
+    border-radius: 40px;
+}
+#finish4{
+    width:  100px;
+    height: 100px;
+    background-color:rgb(0, 199, 27);
+    position: absolute;
+    top: 700px;
+    left:300px;
+    border-radius: 40px;
 }
 
-#touche{
-    width: 50px;
-    height: 50px;
-    background-color: rgb(0, 199, 27);
+.piano1{
+    width: 100px;
+    height: 100px;
     position: absolute;
     top: 0px;
     left: 0px;
+    border-radius: 40px;
     
 }
 
-#touche1{
-    width: 50px;
-    height: 50px;
-    background-color: rgb(209, 9, 9);
-    position: absolute;
-    top: 0px;
-    left: 50px;
-    
-}
-
-#touche2{
-    width: 50px;
-    height: 50px;
-    background-color: rgb(252, 216, 11);
+.piano2{
+    width: 100px;
+    height: 100px;
     position: absolute;
     top: 0px;
     left: 100px;
-    
+    border-radius: 40px;
 }
 
-#touche3{
-    width: 50px;
-    height: 50px;
-    background-color: rgb(0, 4, 255);
+.piano3{
+    width: 100px;
+    height: 100px;
     position: absolute;
     top: 0px;
-    left: 150px;
+    left: 200px;
+    border-radius: 40px;
+    
+}
+.piano4{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    left: 300px;
+    border-radius: 40px;
+    background: blue;
     
 }
 
-#PELOUF{
-    width: 50px;
-    height: 50px;
+#valide1{
+    width: 100px;
+    height: 100px;
     
     position: absolute;
-    top: 450px;
+    top: 700px;
     left: 0px;
     display: none;
     
@@ -108,25 +184,12 @@
     
 }
 
-#PELOUF1{
-    width: 50px;
-    height: 50px;
+#valide2{
+    width: 100px;
+    height: 100px;
     
     position: absolute;
-    top: 450px;
-    left: 50px;
-    display: none;
-    
-    background-image: url(https://media.discordapp.net/attachments/753347321479037029/827121083802583051/Sans_titre_1.gif);
-    
-}
-
-#PELOUF2{
-    width: 50px;
-    height: 50px;
-    
-    position: absolute;
-    top: 450px;
+    top: 700px;
     left: 100px;
     display: none;
     
@@ -134,34 +197,44 @@
     
 }
 
-#PELOUF3{
-    width: 50px;
-    height: 50px;
+#valide3{
+    width: 100px;
+    height: 100px;
     
     position: absolute;
-    top: 450px;
-    left: 150px;
+    top: 700px;
+    left: 200px;
     display: none;
     
     background-image: url(https://media.discordapp.net/attachments/753347321479037029/827121083802583051/Sans_titre_1.gif);
     
 }
-.GameAnimation{
-   animation: block 1.5s infinite linear;
+
+#valide4{
+    width: 100px;
+    height: 100px;
+    
+    position: absolute;
+    top: 700px;
+    left: 300px;
+    display: none;
+    
+    background-image: url(https://media.discordapp.net/attachments/753347321479037029/827121083802583051/Sans_titre_1.gif);
+    
 }
-.GameAnimation1{
-    animation: block1 1.5s infinite linear;
- }
 
-@keyframes block{
-    0%{top: -80px;}
-    100%{top: 500px;}
-
+@keyframes slide{
+    0%{top: 0px;}
+    100%{top: 820px;}
 }
-
-@keyframes block1{
-    0%{top: -80px;}
-    100%{top: 500px;}
-
+@keyframes fixe{
+    0%{top: 0px;}
+    100%{top: 0px;}
+}
+ .tile{
+    animation: slide 1.5s infinite linear;
+}
+.tileFixed{
+    animation: fixe infinite ;
 }
 
