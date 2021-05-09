@@ -76,8 +76,6 @@ function previouspage(){
     document.getElementById("reversecloak").style.display = "none"
     document.getElementById("reversecloak1").style.display = "none"
 }
-
-
 const color=function(){
     // if (pianovalue<=700){mettre les couleur que de O a 700 pour les touches
     piano1.style.backgroundColor= 'rgb('+Math.floor(Math.random() * (255- 1)+1)+','+Math.floor(Math.random() * (255- 1)+1)+','+Math.floor(Math.random() * (255- 1)+1)+')';
