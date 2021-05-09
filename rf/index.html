@@ -9,31 +9,18 @@
 </head>
 <body background="https://i.pinimg.com/originals/1c/38/7d/1c387daad556401b51637bbfdfc38e60.gif">
     
-<audio id="music" src="son/nya!.mp3" controller="false" autoplay="true" autostart="True" type="audio/mp3" height="0" width="0"></audio>
+    <audio id="music" src="son/nya!.mp3" controller="false" autoplay="true" autostart="True" type="audio/mp3" height="0" width="0"></audio>
 
 
 
     <li><input id="volumebar" type="range"></input></li>
     <div class="popup" id="popup-1">
         <div class="overlay"></div>
-        <div class="content"  id="overlay">
+        <div class="content">
             <div class="close-btn" onclick="togglepopup()">&times;</div>
-        <h1 id="cloak0">Commande de jeu</h1>
-        <h3 id="cloak"><br>Ce jeu utilise les touches :<br><br> "A","Z","E" et "R" </h3>
-            <div class="touchecolor" id="cloak1"></div>
-            <div class="touchecolor1"id="cloak2"></div>
-            <div class="touchecolor2"id="cloak3"></div>
-            <div class="touchecolor3"id="cloak4"></div>
-            <div class="next-btn" id="next-btn" onclick="nextpage()">→</div>
-            <div class="previous-btn" id="previous-btn" onclick="previouspage()">←</div>
-
-            <h1 id="reversecloak">But du jeu</h1>
-            <h3 id="reversecloak1">Vous devez appuyer au bon moment sur les touches correspondante. Si vous laisser la touche passer, vous perdez de la vie. Une fois que vous n'en avez plus, vous avez perdu.
-            </h3>
-
-
+        <h1>Commande de jeu</h1>
+        <h3><br>Ce jeu utilise les touches :<br><br> "A","Z","E" et "R" </h3>
         </div>
-
     </div>
     <button class="button-toggle" onclick="togglepopup()">?</button>
     <div id="game">
@@ -50,7 +37,6 @@
         <h2 id="timer">00:00:00</h2>
         <h2 id="score">0</h2>
         <h1 id="lose"></h1>
-        <progress id="hp" value="10" max="10" min="-1"></progress>
     </div>
 </body>
 <script src="script.js"></script>
