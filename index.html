@@ -9,11 +9,25 @@
 </head>
 <body background="https://i.pinimg.com/originals/1c/38/7d/1c387daad556401b51637bbfdfc38e60.gif">
     
-<audio id="music" src="son/nya!.mp3" controller="false" autoplay="true" autostart="True" type="audio/mp3" height="0" width="0"></audio>
+<audio id="music" src="son/eeeaaaooo.mp3" height="0" width="0"></audio>
 
 
+<!-- ---------------- -->
 
     <li><input id="volumebar" type="range"></input></li>
+    
+<!-- ---------------- -->
+    <div class="popup2" id="popup-2">
+        <div class="overlay2"></div>
+        <div class="content2"  id="overlay2">
+            <button class="button" onclick="Starter()"style="border-radius: 50%; background-color: #1eff5b; height: 200px; width: 200px; margin-left:0.5px; margin-right:0.5px; margin-top:0.5px; margin-bottom:0.5px">
+            <h1>Start !</h1></button>
+        </div>
+        </div>
+
+    </div>
+
+    <!-- ---------------- -->
     <div class="popup" id="popup-1">
         <div class="overlay"></div>
         <div class="content"  id="overlay">
@@ -35,6 +49,7 @@
         </div>
 
     </div>
+    <!-- ---------------- -->
     <button class="button-toggle" onclick="togglepopup()">?</button>
     <div id="game">
         <div id="finish1"></div>
@@ -46,12 +61,17 @@
         <div id="valide3" ></div>
         <div id="valide4" ></div>
     </div>
+    <!-- ---------------- -->
     <div >
         <h2 id="timer">00:00:00</h2>
         <h2 id="score">0</h2>
         <h1 id="lose"></h1>
-        <progress id="hp" value="10" max="10" min="-1"></progress>
+        <progress id="hp" value="10" max="10" min="0"></progress>
+        <button class="buttonRestart" id="Restart" onclick="Restart()">Retry !</button>
     </div>
+    <!-- ---------------- -->
 </body>
 <script src="script.js"></script>
+
+
 </html>
