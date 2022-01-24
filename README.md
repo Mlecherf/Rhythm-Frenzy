@@ -1,12 +1,12 @@
 # Rhythm-Frenzy
 
-#Objectives
+# Objectives
 In this project you will create a browser-based game inspired by Osu! and Frets on Fire.
 
-#Getting started
+# Getting started
 You will need to create a public repository with the name rhythm-frenzy.
 
-#Core features
+# Core features
 You will use a requestAnimationFrame recursive loop.
 HTML elements are created automatically at random intervals and move.
 When a key is pressed or a click, an element will be destroyed
@@ -19,7 +19,7 @@ The game has a certain duration. The score is calculated depending on how many e
 OR
 
 The game can speed up overtime. The score is calculated depending on how many elements have been destroyed at the right time. In the other hand the game stops
-#Bonuses
+# Bonuses
 Elements appear on different zones, each zone is associated to a different key
 Let the user choose which controls he wants to set.
 The score can grow more and more depending on how accurate you are when destroying the element
